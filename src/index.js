@@ -50,7 +50,7 @@ class VkAuth extends Component {
         return;
         }
         this.setState({ isProcessing: true });
-        window.VK.Auth.login(this.checkLoginState);
+        window.VK.Auth.login(this.checkLoginState, 4194304);
     };
 
     render() {
